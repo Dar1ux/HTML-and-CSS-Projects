@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+form input[type="text"], input[type="email"] {
+    width: 20%;
+    margin: 5px;
+    border: 2px solid gold;
+    border-radius: 7px;
+}
+
+form input[type="email"] {
+    margin: 5px 9px;
+}
