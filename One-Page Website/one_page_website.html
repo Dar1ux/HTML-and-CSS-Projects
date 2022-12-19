@@ -4,6 +4,7 @@
 		<title>The Rings of Power</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -36,18 +37,108 @@
 					<th>Elendil<th>
 				</tr>
 				<tr>
-					<td><img src="./images/Galadriel.jpg" alt="&#10060; Galadriel" width="150" height="360"><td>
-					<td><img src="./images/Arondir.jpg" alt="&#10060; Arondir" width="150" height="360"><td>
-					<td><img src="./images/Durin.jpg" alt="&#10060; Durin" width="150" height="360"><td>
-					<td><img src="./images/Elrond.jpg" alt="&#10060; Elrond" width="150" height="360"><td>
-					<td><img src="./images/Nori.jpg" alt="&#10060; Nori" width="150" height="360"><td>
-					<td><img src="./images/The_Stranger.jpg" alt="&#10060; The Stranger" width="150" height="360"><td>
-					<td><img src="./images/Halbrand.jpg" alt="&#10060; Halbrand" width="150" height="360"><td>
-					<td><img src="./images/Elendil.jpg" alt="&#10060; Elendil" width="150" height="360"><td>
+					<td><img src="./images/Galadriel.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="&#10060; Galadriel" width="150" height="360"><td>
+					<td><img src="./images/Arondir.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="&#10060; Arondir" width="150" height="360"><td>
+					<td><img src="./images/Durin.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="&#10060; Durin" width="150" height="360"><td>
+					<td><img src="./images/Elrond.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="&#10060; Elrond" width="150" height="360"><td>
+					<td><img src="./images/Nori.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="&#10060; Nori" width="150" height="360"><td>
+					<td><img src="./images/The_Stranger.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="&#10060; The Stranger" width="150" height="360"><td>
+					<td><img src="./images/Halbrand.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="&#10060; Halbrand" width="150" height="360"><td>
+					<td><img src="./images/Elendil.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="&#10060; Elendil" width="150" height="360"><td>
 				</tr>
 			</table>
 		</section>
 		<!-- End Pictures -->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="./images/Galadriel.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="./images/Arondir.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="./images/Durin.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="./images/Elrond.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="./images/Nori.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="./images/The_Stranger.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="./images/Halbrand.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="./images/Elendil.jpg" style="width:100%">
+				</div>
+			
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./images/Galadriel.jpg" onclick="currentSlide(1)" alt="Galadriel">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./images/Arondir.jpg" onclick="currentSlide(2)" alt="Arondir">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./images/Durin.jpg" onclick="currentSlide(3)" alt="Durin">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./images/Elrond.jpg" onclick="currentSlide(4)" alt="Elrond">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Nori.jpg" onclick="currentSlide(5)" alt="Nori">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/The_Stranger.jpg" onclick="currentSlide(6)" alt="The Stranger">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Halbrand.jpg" onclick="currentSlide(7)" alt="Halbrand">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Elendil.jpg" onclick="currentSlide(8)" alt="Elendil">
+				</div>
+			</div>
+		</div>
+  		<!-- End Modal/Lightbox -->
 
 		<!-- Video -->
 		<h2 id="trailer">Official Trailer</h2>
